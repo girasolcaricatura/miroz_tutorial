@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+/***************************** header */
+header {
+    background-color: #1968d6;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+header img {
+    width: 310px;
+    padding: 10px;
+    margin-left: 110px;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+header nav ul a {
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li {
+    font-size: 3.3rem;
+    font-family: 'DotGothic16', sans-serif;
+    padding-right: 45px;
+}
+nav ul li:hover {
+    color: #d26bd9;
+    text-decoration: underline;
+}
+main {
+    /* height: 100vh; */
+    background-color: #e4ffa8;
+    background-color: #f7e13d;
+}
+/****************** animación 
+ */
+ #contenedor {
+     height: 30px;
+     overflow: hidden;
+     background-color: transparent;
+ }
+ #contenido {
+     color: #000;
+     font-family: 'DotGothic16', sans-serif; 
+     font-size: 2rem;
+     -webkit-animation-name:cintaInformativa;
+     -webkit-animation-duration: 40s;
+     -moz-animation-name: cintaInformativa;
+     -webkit-animation-duration: 30s;
+ }
+ @-webkit-keyframes cintaInformativa {
+     from 
+     {
+         margin-left: 100%;
+     }
+     to 
+     {
+         margin-left: -110%;
+     }
+ }
+ main .baño_perros .image_left p a {
+    color: #d26bd9;
+    text-decoration: none;
+    font-family:'DotGothic16', sans-serif;
+    font-size: 3rem;
+}
+main .baño_perros .image_left p a:hover {
+    color: #fff;
+}
+main .baño_perros .image_left img {
+    width: 730px;
+    padding-bottom: 30px;
+}
+main .baño_perros {
+    display: grid;
+    grid-template-columns: 800px 500px;
+    justify-content: center;
+    padding-top: 100px;
+}
+main .baño_perros .image_right img {
+    width: 500px;
+    padding-top: 150px;
+    border-radius: 500px;
+}
+main .teñido_cabello {
+    display: grid;
+    grid-template-columns: 500px 800px;
+    justify-content: center;
+    padding-top: 100px;
+}
+main .teñido_cabello .image_right img {
+    width: 730px;
+}
+main .teñido_cabello .image_left img {
+    width: 550px;
+    border-radius: 500%;
+}
+main .teñido_cabello .image_right p {
+    color: #59dcd5;
+    text-decoration: none;
+    padding-top: 30px;
+    font-family:'DotGothic16', sans-serif;
+    font-size: 3rem;
+}
+main .teñido_cabello .image_right p:hover {
+    color: #fff;
+}
+.image_right p a {
+    text-decoration: none;
+}
+footer {
+    background-color: #39dbd0;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer p, a {
+    font-family:'DotGothic16', sans-serif;
+    font-size: 3rem;
+    padding-right: 70px;
+
+}

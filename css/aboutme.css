@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+/***************************** header */
+header {
+    background-color: #1968d6;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+header img {
+    width: 310px;
+    padding: 10px;
+    margin-left: 110px;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+header nav ul a {
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li {
+    font-size: 3.3rem;
+    font-family: 'DotGothic16', sans-serif;
+    padding-right: 45px;
+}
+nav ul li:hover {
+    color: #d26bd9;
+text-decoration: underline;
+}
+/****************** animación 
+ */
+ #contenedor {
+     height: 30px;
+     overflow: hidden;
+     background-color: transparent;
+ }
+ #contenido {
+     color: #000;
+     font-family: 'DotGothic16', sans-serif; 
+     font-size: 2rem;
+     -webkit-animation-name:cintaInformativa;
+     -webkit-animation-duration: 40s;
+     -moz-animation-name: cintaInformativa;
+     -webkit-animation-duration: 30s;
+ }
+ @-webkit-keyframes cintaInformativa {
+     from 
+     {
+         margin-left: 100%;
+     }
+     to 
+     {
+         margin-left: -110%;
+     }
+ }
+main {
+    background-color: #e4ffa8;
+    background-color: #f7e13d;
+}
+main .columns {
+    display: grid;
+    grid-template-columns: 400px 600px;
+    justify-content: center;
+    padding-top: 30px;
+    grid-gap: 15px;
+}
+main .columns .left_column h2 {
+    font-size: 4rem;
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #d26bd9;
+}
+.text p {
+    font-size: 3rem;
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #d26bd9;
+}
+.retrato {
+    width: 500px;
+}
+footer {
+    background-color: #39dbd0;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer p, a {
+    font-family:'DotGothic16', sans-serif;
+    font-size: 3rem;
+    padding-right: 70px;
+
+}
